@@ -62,7 +62,7 @@ bottom: 0;
     margin-left:1.5vw;
     background-color:#FCFBF7;
     position: absolute;
-    animation: prova 1.5s;
+    animation: prova 2.5s;
 }
    
 .loader > div {
@@ -78,12 +78,13 @@ bottom: 0;
     0%, 100% {
         animation-timing-function: ease-in-out;
     }
-    50% {
+    25%,75% {
         transform: scale(0.2);
     }
-      100{transform: scale(1);
+    50%, 100%{transform: scale(1);
     }
 }
+
 a {
     color: black;
 }

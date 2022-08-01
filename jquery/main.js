@@ -26,7 +26,7 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
     $(window).load(function () {
         setTimeout(function(){
-            $(".loadermask").delay(1500).fadeOut("fast", function () {
+            $(".loadermask").delay(2500).fadeOut("fast", function () {
             });
         },0);
 
