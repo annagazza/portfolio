@@ -1,11 +1,3 @@
-//jQuery( function( $ ) {
-//	$( '.loadermask' ).delay( '750' ).fadeOut( 'slow' );
-//} );
-
-//$(window).load(function() {
-//    $('.loadermask').hide();
-//  });
-
 
 jQuery(document).ready(function ($) {    
             $("#gif").hover(function() {
