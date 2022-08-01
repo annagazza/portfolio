@@ -504,7 +504,7 @@ h2 {
      #arrow {width:1rem;}   
 }
 
-/*
+
 @media only screen and (max-width: 3000px) and (min-width: 2000px) {
     
  .description{
@@ -531,7 +531,6 @@ overflow-y: auto;
     #arrow {width:2.3rem;} 
 .io{margin-top:5vh;}
 }
-*/
 
 
 @media only screen and (min-width: 3000px) and (min-height:2000px){
