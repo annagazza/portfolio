@@ -442,6 +442,7 @@ align-content: center;}
      .voice {width:70%;}
     
     .file{padding-bottom:4vh;}
+    .element {border-radius: 12px;}
     
     .nextprev{
 margin-top:3vh;
