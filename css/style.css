@@ -366,7 +366,8 @@ padding-left:0;
     .button{padding:0;}
     
     .description {font-size:2.5vh;}
-    .contact{font-size:2vh;}
+    .contact{font-size:2vh;
+    padding-bottom:4vh;}
 
 }
 
