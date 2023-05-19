@@ -1,0 +1,26 @@
+h1 {
+  font-family: Zodiak-Bold;
+  font-size: 5vh;
+  margin-bottom: 0.2vh;
+}
+
+h2 {
+  font-size: 2vh;
+}
+
+.selected {
+  text-decoration: underline;
+  text-decoration-color: #9C74F1;
+  text-underline-offset: 3px;
+}
+
+.io {
+  width: 100%;
+  margin-bottom: 6vh;
+  padding-left: 0;
+}
+
+.second {
+  font-family: Switzer-Light;
+  text-decoration: underline;
+}

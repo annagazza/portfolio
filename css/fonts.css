@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Switzer-Medium;
+    src: url(../assets/fonts/Switzer-Medium.woff2) format('woff2'),
+    url(../assets/fonts/Switzer-Medium.woff) format('woff'),
+    url(../assets/fonts/Switzer-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Switzer-MediumItalic;
+    src: url('../assets/fonts/Switzer-MediumItalic.woff2') format('woff2'),
+    url('../assets/fonts/Switzer-MediumItalic.woff') format('woff'),
+    url('../assets/fonts/Switzer-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Switzer-Semibold;
+    src: url('../assets/fonts/Switzer-Semibold.woff2') format('woff2'),
+    url('../assets/fonts/Switzer-Semibold.woff') format('woff'),
+    url('../assets/fonts/Switzer-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Switzer-Light;
+    src: url('../assets/fonts/Switzer-Light.woff2') format('woff2'),
+    url('../assets/fonts/Switzer-Light.woff') format('woff'),
+    url('../assets/fonts/Switzer-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {font-family: 'Zodiak-Bold';
+    src: url('../assets/fonts/Zodiak-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Zodiak-Bold.woff') format('woff'),
+    url('../assets/fonts/Zodiak-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
