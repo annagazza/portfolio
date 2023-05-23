@@ -24,3 +24,33 @@ h2 {
   font-family: Switzer-Light;
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 3000px) and (min-width: 2000px) {
+  .description {
+    overflow-y: auto;
+    height: 64vh;
+  }
+
+  .loader {
+    border-radius: 6rem;
+  }
+
+  .loader > div {
+    border-radius: 6rem;
+  }
+
+  .box {
+    border-radius: 6rem;
+    padding: 6rem;
+  }
+
+  .margini {
+    width: auto;
+    height: 85vh;
+    margin-right: 4rem;
+  }
+
+  .io {
+    margin-top: 5vh;
+  }
+}

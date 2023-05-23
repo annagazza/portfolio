@@ -1,8 +1,16 @@
+html, body, section {
+  height: 100%;
+}
+
 body {
   color: black;
   background-color: #9C74F1;
-  width: 100%;
-  height: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -22,37 +30,18 @@ b {
   font-family: Switzer-Semibold;
 }
 
-.loadermask {
-  background-color: #9C74F1;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 999;
-}
-
-.loader {
-  transform: scale(1);
-  height: 94vh;
-  width: 97vw;
+.box {
+  height: 94%;
+  width: 97%;
   border-radius: 3.5rem;
-  margin-top: 3vh;
-  margin-left: 1.5vw;
   background-color: #FCFBF7;
-  position: absolute;
-  animation: prova 2.5s;
+  position: fixed;
+  padding: 3.5rem;
+  transform: scale(1);
+  animation: bouncyScale 2.5s;
 }
 
-.loader > div {
-  width: 97vw;
-  height: 94vh;
-  border-radius: 3.5rem;
-  background: #FCFBF7;
-  display: inline-block;
-}
-
-@keyframes prova {
+@keyframes bouncyScale {
   0%, 100% {
     animation-timing-function: ease-in-out;
   }
@@ -64,15 +53,19 @@ b {
   }
 }
 
-.box {
-  height: 94vh;
-  width: 97vw;
-  border-radius: 3.5rem;
-  margin-top: 3vh;
-  margin-left: 1.5vw;
-  background-color: #FCFBF7;
-  position: fixed;
-  padding: 3.5rem;
+.box > * {
+  opacity: 0;
+  animation: 2.5s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .margini {
@@ -81,14 +74,12 @@ b {
   bottom: 0;
   height: 83vh;
   width: auto;
-  margin: 0;
+  margin: 0 3.5rem 0 0;
   padding: 0;
-  margin-right: 3.5rem;
 }
 
 .container {
   width: 100%;
-  visibility: visible;
   padding: 0;
   position: relative;
   display: flex;
@@ -107,4 +98,162 @@ b {
 
 .button {
   padding-left: 4vw;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    width: 100%;
+    font-family: Switzer-medium;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .button {
+    padding-left: 0;
+  }
+
+  .io {
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .box {
+    height: 97%;
+    width: 94%;
+    border-radius: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .margini {
+    margin-right: 1.5rem;
+    height: 87vh;
+  }
+}
+
+@media only screen and (max-width: 703px) and (min-width: 591px) {
+  .box {
+    width: 94%;
+    height: 96%;
+    border-radius: 1.5rem;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .margini {
+    margin-left: 0;
+    margin-right: 2.5rem;
+    height: 88vh;
+  }
+}
+
+@media only screen and (max-width: 815px) and (min-width: 704px) {
+  .box {
+    width: 94%;
+    height: 96%;
+    border-radius: 2.5rem;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .margini {
+    margin-left: 0;
+    margin-right: 3rem;
+    height: 87vh;
+  }
+}
+
+@media only screen and (max-width: 927px) {
+  .nav {
+    width: 100%;
+    font-family: Switzer-medium;
+    font-size: 2.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .button {
+    padding: 0;
+  }
+
+  .description {
+    font-size: 2.5vh;
+  }
+}
+
+@media only screen and (max-width: 927px) and (min-width: 815px) {
+  .box {
+    width: 94%;
+    height: 96%;
+    border-radius: 2.5rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .margini {
+    margin-left: 0;
+    margin-right: 3rem;
+    height: 86vh;
+  }
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 927px) {
+  .loader {
+    border-radius: 2.5rem;
+  }
+
+  .box {
+    border-radius: 2.5rem;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .margini {
+    margin-left: 0;
+    margin-right: 2.5rem;
+    height: 82vh;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1150px) {
+  .loader {
+    border-radius: 2.5rem;
+  }
+
+  .box {
+    border-radius: 2.5rem;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .margini {
+    margin-left: 0;
+    margin-right: 2.5rem;
+    height: 82vh;
+  }
+}
+
+@media only screen and (min-width: 3000px) and (min-height: 2000px) {
+  .loader {
+    border-radius: 8rem;
+  }
+
+  .box {
+    border-radius: 8rem;
+    padding: 8rem;
+  }
+
+  .margini {
+    margin-right: 8rem;
+    height: 85vh;
+  }
 }
