@@ -284,6 +284,10 @@ h1 {
   .macro {
     width: 100%;
   }
+
+  .description {
+    font-size: 2.5vh;
+  }
 }
 
 @media only screen and (max-width: 927px) and (min-width: 815px) {
