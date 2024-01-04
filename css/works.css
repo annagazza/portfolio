@@ -42,49 +42,6 @@
        font-style: normal;
 }
 
-
-.loadermask {
-background-color: #9C74F1;
-bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 999;}
-
-
-.loader {
-    transform: scale(1);
-    height: 94vh;
-    width: 97vw;
-    border-radius:3.5rem;
-    margin-top:3vh;
-    margin-left:1.5vw;
-    background-color:#FCFBF7;
-    position: absolute;
-    animation: prova 2.5s;
-}
-   
-.loader > div {
-    width: 97vw;
-    height: 94vh;
-    border-radius: 3.5rem;
-    background: #FCFBF7;
-    display:inline-block;
-    
-}
-
-@keyframes prova {
-    0%, 100% {
-        animation-timing-function: ease-in-out;
-    }
-    25%,75% {
-        transform: scale(0.2);
-    }
-    50%, 100%{transform: scale(1);
-    }
-}
-
 a {
     color: black;
 }
@@ -96,6 +53,11 @@ a:hover {
 
 a, a:visited {
 	transition: 0.3s all ease;
+}
+
+.selected:hover{text-decoration: underline;
+ text-underline-offset: 3px;
+color:#9C74F1;
 }
 
 b {font-family: Switzer-Semibold;}
@@ -178,7 +140,10 @@ h2 {
 
 .second {text-decoration:underline;}
 
+
 /*griglia*/
+
+
 
 .grid-container {
 margin:0;
@@ -303,20 +268,6 @@ padding:0;
 }
 
 @media only screen and (max-width:590px){
-    .loader {
-    height: 97vh;
-    width: 94vw;
-    border-radius:1.5rem;
-    margin-top:1.5vh;
-    margin-left:3vw;
-}
-   
-.loader > div {
-    width: 94vw;
-    height: 97vh;
-    border-radius:1.5rem; 
-    margin-top:1.5vh;
-}
 
     .box {
     height: 97vh;
@@ -352,21 +303,6 @@ padding:0;
 }
 
 @media only screen and (max-width: 703px) and (min-width: 591px){
-  
- .loader {
-    height: 96vh;
-    width: 94vw;
-    border-radius:1.5rem;
-    margin-top:2vh;
-    margin-left:3vw;
-}
-   
-.loader > div {
-    width: 94vw;
-    height: 96vh;
-    border-radius:1.5rem; 
-    margin-top:2vh;
-}
 
     .box {
     height: 96vh;
@@ -404,20 +340,6 @@ padding:0;
 
 @media only screen and (max-width: 815px) and (min-width: 704px){
   
- .loader {
-    height: 96vh;
-    width: 94vw;
-    border-radius:2.5rem;
-    margin-top:2vh;
-    margin-left:3vw;
-}
-   
-.loader > div {
-    width: 94vw;
-    height: 96vh;
-    border-radius:2.5rem; 
-    margin-top:2vh;
-}
 
     .box {
     height: 96vh;
@@ -473,20 +395,6 @@ padding:0;
 }
 
 @media only screen and (max-width: 927px) and (min-width: 815px){
-  .loader {
-    height: 96vh;
-    width: 94vw;
-    border-radius:2.5rem;
-    margin-top:2vh;
-    margin-left:3vw;
-}
-   
-.loader > div {
-    width: 94vw;
-    height: 96vh;
-    border-radius:2.5rem; 
-    margin-top:2vh;
-}
 
     .box {
     height: 96vh;
@@ -522,14 +430,6 @@ padding:0;
 }
 
 @media only screen and (max-width: 1150px) and (min-width: 927px) {
-    .loader {
-    border-radius:2.5rem;
-
-}
-   
-.loader > div {
-    border-radius:2.5rem; 
-}
 
     .box {
     border-radius:2.5rem;
@@ -548,17 +448,8 @@ padding:0;
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1150px) {
-   
-   .loader {
-    border-radius:2.5rem;
 
-}
-    
     .nav{width:28vw;}
-   
-.loader > div {
-    border-radius:2.5rem; 
-}
 
     .box {
     border-radius:2.5rem;
@@ -632,14 +523,6 @@ overflow-y: auto;
     height: 64vh;
 }  
     
-       .loader {
-    border-radius:6rem;
-}
-   
-.loader > div {
-    border-radius: 6rem;
-}
-    
     .box {
     border-radius:6rem;
     padding:6rem;  
@@ -660,14 +543,6 @@ overflow-y: auto;
 
 
 @media only screen and (min-width: 3000px) and (min-height:2000px){
-    
-    .loader {
-    border-radius:8rem;
-}
-   
-.loader > div {
-    border-radius: 8rem;
-}
     
     .box {
     border-radius:8rem;
