@@ -179,7 +179,7 @@ h2 {
     font-size: 2vh;   
 }
 
-.second {
+.second, .copyright {
     font-family: Switzer-Light;
 }
 
@@ -191,9 +191,8 @@ bottom:0;
 margin-bottom:0;
 }
 
-copyright {
-    font-size: 0.5rem;
-    font-family: Switzer-Light;
+.copyright {
+    font-size: 0.7rem;
 }
 
 .contact {
