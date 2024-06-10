@@ -43,7 +43,7 @@
 }
 
 .loadermask {
-background-color: #9C74F1;
+background-color:#7E5CE7;
 bottom: 0;
 	left: 0;
 	position: fixed;
@@ -90,14 +90,14 @@ a {
 
 
 a:hover{text-decoration:none;
-color:#9C74F1;}
+color:#7E5CE7;}
 
 
 b {font-family: Switzer-Semibold;}
 
 body {
     color:black;
-    background-color:#9C74F1;
+    background-color:#7E5CE7;
     width: 100%;
     height:100%;
 }
@@ -152,7 +152,7 @@ body {
         width:auto;
       }
 
-#back:hover{fill:#9C74F1}
+#back:hover{fill:#7E5CE7}
 
 h1 {
     font-family: Zodiak-Bold;
@@ -196,7 +196,7 @@ width:0;}
 
 .annotation{ font-size:1.7vh;}
 
-.num {color: #9C74F1;}
+.num {color: #7E5CE7;}
 
 .description {font-family: Switzer-Medium;
 font-size:2vh;
