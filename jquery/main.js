@@ -24,12 +24,11 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(document).ready(function ($) {
-    $(window).load(function () {
-        setTimeout(function(){
-            $(".loadermask").delay(2500).fadeOut("fast", function () {
-            });
-        },0);
+$(window).load(function () {
+   setTimeout(function(){
+           $(".loadermask").delay(2500).fadeOut("fast", function () {
+        });
+ },0); 
 
-    });  
+});  
 });
-
