@@ -279,8 +279,9 @@ width:100%;}
     padding:24px;
 }
            .margini{
-    height:83vh;  
+    height:85vh;   
     margin-right:0;
+                   padding-right:24px;
 }
 .container1 {
 	width: 100%;
@@ -293,9 +294,6 @@ width:100%;}
     padding-left: 0;
     width: 100%;
 }
-    .margini{
-        padding-right:24px;
-    }
 
     .element{border-radius:16px;}
     
@@ -322,7 +320,7 @@ width:100%;}
     
    h3{font-size:28px;}
     
-    .nextprev{padding-bottom:24px;}
+    .nextprev{padding-bottom:48px;}
     
     .result, .info, .back {padding-right:0;
     padding-left:0;}

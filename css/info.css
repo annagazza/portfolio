@@ -182,8 +182,10 @@ border-bottom: solid 2px #704CE5;}
     padding:24px;
 }
            .margini{
-    height:83vh; 
+    height:85vh; 
     margin-right:0;
+    padding-right:24px;
+    padding-left:0;
 }
 .container1 {
 	width: 100%;
@@ -197,14 +199,10 @@ border-bottom: solid 2px #704CE5;}
     padding-right:24px;
     width: 100%;
 }
-    .margini{
-        padding-right:24px;
-        padding-left:0;
-    }
         
         .main{padding-bottom:24px;}
         .cv{gap:16px;}
-        .area2{padding-bottom:24px;}
+        .area2{padding-bottom:48px;}
     }
 
 

@@ -428,7 +428,7 @@ padding-bottom: 8px;}
     
 
            .margini{
-    height:83vh; 
+    height:85vh; 
     margin-right:0;
 }
     .hero{padding-bottom:64px;
@@ -537,11 +537,4 @@ p, li, .main, .description, .skill, .copyright-p{font-size:24px;
    padding-right:80px;}
     
     .container1{padding-right:200px;}
-}
-
-@media (max-width: 768px) {
-  .box {
-    height: calc(100vh - env(safe-area-inset-bottom, 0));
-    padding-bottom: env(safe-area-inset-bottom, 0);
-  }
 }
