@@ -42,26 +42,26 @@
 
 
   <title>Anna Gazza</title>
-     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-      // Controlla se il loader è già stato mostrato
-      if (!localStorage.getItem('loaderShown')) {
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Controlla se il loader è già stato mostrato in questa sessione
+      if (!sessionStorage.getItem('loaderShown')) {
         // Mostra il loader
         document.querySelector('.loadermask').style.display = 'block';
 
         // Imposta un timeout per nascondere il loader dopo un certo tempo (ad esempio, 2.5 secondi)
         setTimeout(function() {
           document.querySelector('.loadermask').style.display = 'none';
-          // Imposta il valore nel localStorage per indicare che il loader è stato mostrato
-          localStorage.setItem('loaderShown', 'true');
+          // Imposta il valore nel sessionStorage per indicare che il loader è stato mostrato
+          sessionStorage.setItem('loaderShown', 'true');
         }, 2500); // 2500 millisecondi = 2.5 secondi
       } else {
-        // Nascondi il loader se è già stato mostrato
+        // Nascondi il loader se è già stato mostrato in questa sessione
         document.querySelector('.loadermask').style.display = 'none';
       }
-    });  // 
+    });
   </script>
-
 </head>
 
 
