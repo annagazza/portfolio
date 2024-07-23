@@ -510,6 +510,8 @@ grid-column-gap:3%;
       height: calc(97vh - env(safe-area-inset-bottom));
       padding-bottom: env(safe-area-inset-bottom);
     
+      }
+    }
 }
 
 
