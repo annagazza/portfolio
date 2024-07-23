@@ -163,7 +163,7 @@ export const handleGridScrolling = () => {
     const gridContainer = document.getElementsByClassName('gridcontainer')[0];
 
     margini.onscroll = (event) => {
-        const isCloseToBottom = event.target.scrollTop > margini.clientHeight;
+        const isCloseToBottom = event.target.scrollTop > margini.clientHeight - 4;
 
         if (isGridScrollable !== isCloseToBottom) {
             isGridScrollable = isCloseToBottom;
