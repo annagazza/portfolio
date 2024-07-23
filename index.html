@@ -61,6 +61,20 @@
         document.querySelector('.loadermask').style.display = 'none';
       }
     });
+        
+          function adjustBoxHeight() {
+    const box = document.querySelector('.box');
+    if (box && window.innerWidth <= 768) {
+      const safeAreaBottom = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--safe-area-inset-bottom')) || 0;
+      box.style.height = `calc(100vh - ${safeAreaBottom}px)`;
+      box.style.paddingBottom = `${safeAreaBottom}px`;
+    }
+  }
+
+  // Call the function on load and on resize
+  window.addEventListener('load', adjustBoxHeight);
+  window.addEventListener('resize', adjustBoxHeight);
+        
   </script>
 </head>
 
