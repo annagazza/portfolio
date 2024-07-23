@@ -1,601 +1,378 @@
 @font-face {
-  font-family: Switzer-Medium;
-  src: url(../assets/fonts/Switzer-Medium.woff2) format('woff2'),
-       url(../assets/fonts/Switzer-Medium.woff) format('woff'),
-       url(../assets/fonts/Switzer-Medium.ttf) format('truetype');
-       font-weight: 500;
-       font-style: normal;
+  font-family: 'Switzer-Regular';
+  src: url('../assets/fonts/Switzer-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Switzer-Regular.woff') format('woff'),
+       url('../assets/fonts/Switzer-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
-
 @font-face {
-  font-family: Switzer-MediumItalic;
-  src: url('../assets/fonts/Switzer-MediumItalic.woff2') format('woff2'),
-       url('../assets/fonts/Switzer-MediumItalic.woff') format('woff'),
-       url('../assets/fonts/Switzer-MediumItalic.ttf') format('truetype');
-       font-weight: 500;
-       font-style: italic;
+  font-family: 'Switzer-Medium';
+  src: url('../assets/fonts/Switzer-Medium.woff2') format('woff2'),
+       url('../assets/fonts/Switzer-Medium.woff') format('woff'),
+       url('../assets/fonts/Switzer-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
 }
-
 @font-face {
-  font-family: Switzer-Semibold;
+  font-family: 'Switzer-Semibold';
   src: url('../assets/fonts/Switzer-Semibold.woff2') format('woff2'),
        url('../assets/fonts/Switzer-Semibold.woff') format('woff'),
        url('../assets/fonts/Switzer-Semibold.ttf') format('truetype');
-       font-weight: 600;
-       font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: Switzer-Light;
-  src: url('../assets/fonts/Switzer-Light.woff2') format('woff2'),
-       url('../assets/fonts/Switzer-Light.woff') format('woff'),
-       url('../assets/fonts/Switzer-Light.ttf') format('truetype');
-       font-weight: 300;
-       font-style: normal;
-}
-
-@font-face {font-family: 'Zodiak-Bold';
+  font-family: 'Zodiak-Bold';
   src: url('../assets/fonts/Zodiak-Bold.woff2') format('woff2'),
        url('../assets/fonts/Zodiak-Bold.woff') format('woff'),
        url('../assets/fonts/Zodiak-Bold.ttf') format('truetype');
-       font-weight: 700;
-       font-style: normal;
-}
-
-.loadermask {
-background-color:#7E5CE7;
-bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 999;}
-
-
-.loader {
-    transform: scale(1);
-    height: 94vh;
-    width: 97vw;
-    border-radius:3.5rem;
-    margin-top:3vh;
-    margin-left:1.5vw;
-    background-color:#FCFBF7;
-    position: absolute;
-    animation: prova 2.5s;
-}
-   
-.loader > div {
-    width: 97vw;
-    height: 94vh;
-    border-radius: 3.5rem;
-    background: #FCFBF7;
-    display:inline-block;
-    
-}
-
-@keyframes prova {
-    0%, 100% {
-        animation-timing-function: ease-in-out;
-    }
-    25%,75% {
-        transform: scale(0.2);
-    }
-    50%, 100%{transform: scale(1);
-    }
-}
-
-a {
-    color: black;
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
 }
 
 
-a:hover{text-decoration:none;
-color:#7E5CE7;}
 
+/*TEXT STYLE*/
+a {color: black;}
+a:hover{
+    text-decoration:none;
+    color:#5128D3;}
 
-b {font-family: Switzer-Semibold;}
+h2{font-family: Zodiak-Bold;
+font-size:40px;
+padding-bottom:16px;}
+
+h3 {font-family: Switzer-Regular;
+font-size: 32px;}
+
+h4 {font-family: Switzer-Medium;
+font-size: 24px;}
+
+p{font-family:Switzer-Regular;
+font-size:16px;
+margin:0;
+padding:0;}
+
+b{font-family:Switzer-Semibold;}
+
+    ol{display:block;
+margin-bottom:0;}
+
+li{list-style:none;}
+
+li:before {
+    content:"✦";
+font-size:13px;
+color: #704CE5;
+padding-right:8px;}
+
+.arrow{font-family:'system-ui', sans-serif;}
 
 body {
     color:black;
-    background-color:#7E5CE7;
+    background-color:#704CE5;
     width: 100%;
     height:100%;
 }
 
-
 .box {
     height: 94vh;
     width: 97vw;
-    border-radius:3.5rem;
+    border-radius:48px;
     margin-top:3vh;
     margin-left:1.5vw;
     background-color:#FCFBF7;
     position:fixed;
-    padding:3.5rem;
-   
+    padding:48px;   
 }
 
-.margini{
-    position:absolute;
+.margini {position:absolute;
     overflow:scroll;
     bottom:0;
-    height:83vh;
+    height:82vh;
     width:auto;
     margin:0;
     padding-top:0;
-    margin-right: 3.5rem;
-}
+    margin-right:48px;}
 
-.container{
-    width:100%;
-    visibility:visible;
-    padding:0;
-    position:relative;
-    display:flex;
-    justify-content: flex-end;
-    z-index: 3;
-    }
-    
-    .nav{
-    width:25vw;
-    font-family: Switzer-medium;
-    font-size: 2vh;
+/*NAVBAR*/
+.navbar{
+    font-family: Switzer-Regular;
+    font-size:18px;
     display:flex;
     justify-content: space-between;
     align-content: flex-start;
+    padding:0;
+    margin:0;
+    font-size:18px;
+    width:100%;
     }
 
+.nav{gap:48px;}
 
-.button{padding-left: 4vw;}
 
-#back {height:2vh;
-        width:auto;
-      }
-
-#back:hover{fill:#7E5CE7}
-
-h1 {
-    font-family: Zodiak-Bold;
-    font-size: 4.8vh;
-    margin-bottom:3vh;
-    margin-top:5vh;
-}
-
-.container1 {
-	width: 100%;
-    height:auto;
-    padding: 0;
+/*SIDEBAR*/
+.container1{
+    margin:0;
+    padding:0;
     position:fixed;
-    display:block;
-    padding-right:5vw;
+    height:82vh;
+    overflow: auto;
+    padding-right:100px;
+    padding-bottom:48px;
 }
 
+.media{
+    font-family: Switzer-Medium;
+    padding:0;
+    margin-bottom:0;
+}
+
+#link{
+    color:#704CE5;
+    text-decoration: underline;}
+
+#link:hover{
+    color:#5128D3;
+    text-decoration: underline;}
+
+.tag{
+padding-bottom:48px;
+font-size: 13px;
+font-family: Switzer-Medium;
+color:#55535C;
+display:flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+gap:12px;}
+
+.pill {border: 2px solid;
+padding: 4px 8px;
+border-radius:24px;}
+
+/*PROGETTO*/
 .container2 {
-    padding-left: 2vw;
-    padding-right:0; 
-    padding-top: 0;
+padding:0;
 }
 
-#arrow{
-    width: 1.3rem;
-    height: auto;
-    margin-left: 0.2vw;
-}
-#arrowdx{
-    width: 1.3rem;
-    height: auto;
-    margin-right:0.2vw;
-}
-
-
-#arrow2 {
-visibility: hidden;
-width:0;}
-
-.disclaimer {font-size:1.5vh;}
-
-.annotation{ font-size:1.7vh;}
-
-.num {color: #7E5CE7;}
-
-.description {font-family: Switzer-Medium;
-font-size:2vh;
-padding-left:0;
-margin:0}
-
-.link {text-decoration: underline;}
-.link:hover{text-decoration: underline;}
-
-
-#position{font-family: Switzer-Medium;
-font-size:2vh;
-margin-left:0;
-padding-left:0;   
-}
-
-.null {height:2vh;
-display:block;}
-
-.credits {font-size:1.7vh;
-display: flex;
-margin-top:0;
-margin-bottom: 2vh;
-width:100%;}
-
-.uno{width:9vw;}
-
-.year{width:100%}
-
-.cm {
-    font-family: Switzer-Light;
-    font-size: 1.7vh;
-    margin-top:0;
-    margin-bottom:5vh;
-}
-
-     .macro {display:flex;
-    justify-content:space-between;
-    margin-bottom: 0.8vh;
-width:50%;}
-    
-    .voice {width:75%;}
-
-/*gallery*/
 .element {
     width:100%;
-    border-radius:20px;
+    border-radius: 24px;
+    margin-bottom: 24px;
 }
 
 .element1 {
     width:100%;
+    border-radius: 24px;
+    margin-top: 24px;
 }
 
-.file{
-padding-bottom:6vh;}
 
-.dida{padding-top:1vh;
-font-family: Switzer-Light;
-font-size:1.7vh;
-margin-bottom:0;
-display:block;}
+.file{padding-bottom:64px;}
+.file1{padding-bottom:24px;}
 
+.background{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
 
-.nextprev{margin-bottom: 10vh;
-padding-left:0;
-display:flex;
-justify-content: space-between;
-font-size:2vh;}
-
-.link{padding-left:0.3vw;
-padding-right:0.3vw}
-
-.prj,.next,.prev:hover{color:black;}
-
-.next, .prev{
-display:flex;
-justify-content: flex-start;
-align-content: center;}
+.info{ display:flex;
+    display:block;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow:3;}
 
 
+.awards {
+padding-top:32px;
+font-size:13px;
+width:100%;}
 
-/*media queries*/
-@media only screen and (max-width: 1200px){
-  
-.nav{
-    width:100%;
-    font-family: Switzer-medium;
+.number1{font-size:60px;
+margin-top:-16px;
+margin-bottom:-16px;
+padding:0;}
+
+
+/*PROGETTO - GOAL*/
+.highlight{padding:48px;
+background-color: #704CE5;
+color:white;}
+
+
+
+/*PROGETTO - PROCESS*/
+.step{ 
     display:flex;
     justify-content: space-between;
-    align-content: flex-start;
+    margin:0;
+    padding:0;
+    text-align: center;
+    padding-bottom:48px;
+    border-bottom: solid 2px;
+    border-bottom-color: #704CE5;
+    padding-left:48px;
+    padding-right:48px;
+    margin-bottom:40px;
     }
+
+.number{
+    font-family: Zodiak-Bold;
+    font-size:60px;
+    color:#704CE5;
+        }
+
+.doubleimg{display:flex;
+flex-direction: row;
+gap:24px;}
+
+.task{font-size:13px;}
+
+.title1 {padding-left:48px;}
+
+.dida{
+    padding-top:8px;
+    font-size:13px;
+}
+
+.result{
+    padding:48px;
+    border-top: solid 2px;
+    border-bottom:solid 2px;
+    border-color: #704CE5;
+}
+
+.credits{display:flex;
+justify-content: space-between;
+padding-top:24px;
+padding-bottom:24px;
+border-bottom:solid 2px;
+border-color: #704CE5;
+}
+
+.nextprev{display:flex;
+justify-content: flex-end;
+padding-bottom: 48px;}
+
+.align{display:flex;
+justify-content: space-between;
+width:100%;}
+
+
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 1200px){
     
-    .button{padding-left: 0;}
-    
+     .box {
+    height: 97vh;
+    width: 94vw;
+    border-radius:24px;
+    margin-top:1.5vh;
+    margin-left:3vw;
+    padding:24px;
+}
+           .margini{
+    height:83vh;  
+    margin-right:0;
+}
 .container1 {
 	width: 100%;
     padding:0;
     position:relative;
-    margin-bottom:6vh;
-    margin-top:1vh;
+    padding-bottom: 64px;
+    height:auto;
 }
-
 .container2 {
     padding-left: 0;
-}
- 
-  .file{padding-left:0;}
-
-    .prev{margin-bottom:0}
-}
-
-@media only screen and (max-width:590px){
-    .loader {
-    height: 97vh;
-    width: 94vw;
-    border-radius:1.5rem;
-    margin-top:1.5vh;
-    margin-left:3vw;
-}
-   
-.loader > div {
-    width: 94vw;
-    height: 97vh;
-    border-radius:1.5rem; 
-    margin-top:1.5vh;
-}
-
-    .box {
-    height: 97vh;
-    width: 94vw;
-    border-radius:1.5rem;
-    margin-top:1.5vh;
-    margin-left:3vw;
-    padding-top: 2rem;
-    padding-left:1.5rem;
-    padding-right:1.5rem;
-}
-           .margini{
-    margin-left:0;
-    margin-right:1.5rem;
-    height:87vh; 
-}
-    .annotation{padding-top: 0;
-    margin-top:0;}
-    
-    #arrow, #arrowdx, #arrow2 {width:1.4rem;}
-    
-}
-
-@media only screen and (max-width: 703px) and (min-width: 591px){
-  
- .loader {
-    height: 96vh;
-    width: 94vw;
-    border-radius:1.5rem;
-    margin-top:2vh;
-    margin-left:3vw;
-}
-   
-.loader > div {
-    width: 94vw;
-    height: 96vh;
-    border-radius:1.5rem; 
-    margin-top:2vh;
-}
-
-    .box {
-    height: 96vh;
-    width: 94vw;
-    border-radius:2.5rem;
-    margin-top:2vh;
-    margin-left:3vw;
-    padding-top: 2rem;
-    padding-left:2.5rem;
-    padding-right:2.5rem;
-}
-     .margini{
-    margin-left:0;
-    margin-right:2.5rem;
-    height:88vh; 
-}
-     #arrow, #arrowdx, #arrow2 {width:1.3rem;}
-    
-}
-
-@media only screen and (max-width: 815px) and (min-width: 704px){
-  
- .loader {
-    height: 96vh;
-    width: 94vw;
-    border-radius:2.5rem;
-    margin-top:2vh;
-    margin-left:3vw;
-}
-   
-.loader > div {
-    width: 94vw;
-    height: 96vh;
-    border-radius:2.5rem; 
-    margin-top:2vh;
-}
-
-    .box {
-    height: 96vh;
-    width: 94vw;
-    border-radius:2.5rem;
-    margin-top:2vh;
-    margin-left:3vw;
-    padding-top: 3rem;
-    padding-left:3rem;
-    padding-right:3rem;
-}
-     .margini{
-    margin-left:0;
-    margin-right:3rem;
-    height:87vh; 
-}
-     #arrow, #arrowdx, #arrow2 {width:1.6rem;}
-    
-}
-
-@media only screen and (max-width: 927px) {
-    
-  
-    .nav{
-    width:100%;
-    font-family: Switzer-medium;
-    font-size: 2.5vh;
-    display:flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    }
-    .button{padding:0;}
-    
-    .description {font-size:2.5vh;}
-    #position {font-size:2.5vh;}
-    .annotation {font-size:2vh;}
-    .credits{font-size:2vh;}
-    .dida{font-size:2vh;}
-    
-    .cm {font-size:2vh;}
-    
-     .voice {width:70%;}
-    
-    .file{padding-bottom:4vh;}
-    .element {border-radius: 12px;}
-    
-    .nextprev{
-margin-top:3vh;
-padding-left:0;
-display:block;
-font-size:2vh}
-    
-    .prev{margin-bottom:2vh;}
-
-    .container1 {
-    margin-top:5vh;
-}
-    .hidden{visibility:hidden;}
-    #arrow2{visibility:visible;}
-    
-    #arrow{margin-left:1vw;}
-    #arrowdx, #arrow2{margin-right:1vw;}
-    
-      .macro {width:100%;}
-    
-}
-
-@media only screen and (max-width: 927px) and (min-width: 815px){
- .loader {
-    height: 96vh;
-    width: 94vw;
-    border-radius:2.5rem;
-    margin-top:2vh;
-    margin-left:3vw;
-}
-   
-.loader > div {
-    width: 94vw;
-    height: 96vh;
-    border-radius:2.5rem; 
-    margin-top:2vh;
-}
-
-    .box {
-    height: 96vh;
-    width: 94vw;
-    border-radius:2.5rem;
-    margin-top:2vh;
-    margin-left:3vw;
-    padding-top: 3rem;
-    padding-left:3rem;
-    padding-right:3rem;
-}
-     .margini{
-    margin-left:0;
-    margin-right:3rem;
-    height:86vh; 
-}
-     #arrow, #arrowdx, #arrow2 {width:1.6rem;}  
-    
-}
-
-@media only screen and (max-width: 1150px) and (min-width: 927px) {
-    .loader {
-    border-radius:2.5rem;
-
-}
-   
-.loader > div {
-    border-radius:2.5rem; 
-}
-
-    .box {
-    border-radius:2.5rem;
-    padding-top: 2.5rem;
-    padding-left:2.5rem;
-    padding-right:2.5rem;
-}
-     .margini{
-    margin-left:0;
-    margin-right:2.5rem;
-    height:82vh; 
-}
-     #arrow {width:1rem;}   
-    
-    
-}
-
-@media only screen and (max-width: 1500px) and (min-width: 1201px){
-    
-    .container1 {padding-right:0;}
-    .file, .credits, .cm, .nextprev {padding-left:5vw;}
-    
-    .margini{height:83vh;}
-
-    .description, .nextprev {font-size:2vh;}
-  
-}
-
-/*
-@media only screen and (max-width: 3000px) and (min-width: 2000px) {s
-    
-       .loader {
-    border-radius:6rem;
-}
-   
-.loader > div {
-    border-radius: 6rem;
-}
-    
-    .box {
-    border-radius:6rem;
-    padding:6rem;  
-}
-    .margini{width:93%;
-    height:85vh;
-    margin-right:6rem;}
-
-    #arrow, #arrowdx, #arrow2 {width:2.2rem;} 
-    
-    .element {border-radius:60px;}
-    
-    h1{margin-top:2vh;
-    font-size:4vh;}
-
-}
-*/
-
-
-@media only screen and (min-width: 3000px) and (min-height:2000px){
-    
-    .loader {
-    border-radius:8rem;
-}
-   
-.loader > div {
-    border-radius: 8rem;
-}
-    
-    .box {
-    border-radius:8rem;
-    padding:8rem;  
+    width: 100%;
 }
     .margini{
-        margin-right:8rem;
-        height:83vh;
-        width:93%;
+        padding-right:24px;
     }
+
+    .element{border-radius:16px;}
     
-    .element{border-radius:4rem;}
+    .background{flex-direction: column;}
+    .back{padding-top:40px;}
+    .highlight, .result {padding:48px 24px;}
+    .file{padding-bottom: 48px;}
+    .credits{
+        flex-direction: column; 
+        gap:24px;}
     
-      h1{margin-top:2vh;
-    font-size:4vh;}
+    .step { 
+        flex-direction: column; 
+        padding-left:24px;
+        padding-right:24px;
+        padding-bottom: 24px; 
+    }
+    .title1 {padding-left:0;}
+    
+    .pill{gap:16px;}
+    
+    .text{margin:0;
+    padding:0;}
+    
+   h3{font-size:28px;}
+    
+    .nextprev{padding-bottom:24px;}
+    
+    .result, .info, .back {padding-right:0;
+    padding-left:0;}
+    
+    
+}
+
+@media only screen and (min-width: 2500px){
+    
+   h2{font-family: Zodiak-Bold;
+font-size:80px;
+padding-bottom:16px;}
+
+h3 {font-family: Switzer-Medium;
+font-size: 56px;}
+
+h4 {font-family: Switzer-Regular;
+font-size: 32px;}
+
+p, li, .dida, .navbar{font-size:24px;   
+}
+    .nav{font-size:24px;}
+ 
+    .box {
+    height: 94vh;
+    width: 97vw;
+    border-radius:80px;
+    padding:80px;   
+}
+
+    .margini{padding-right:80px;
+    margin:0;}
+    
+    .container1{padding-right:200px;}
+    .text, .nav, .task{font-size:24px;}
+    .dida, .pill {font-size:18px;}
+    .number, .number1 {font-size: 120px;}
+    
+    .element, { margin-bottom: 48px;
+}
+
+.element1 {
+    margin-top: 48px;
+}
+
+
+.file{padding-bottom:100px;}
+.file1{padding-bottom:64px;}
 
 
 }
 
 
-
-
-   

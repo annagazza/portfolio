@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
 
 jQuery(document).ready(function ($) {    
             $(".link").hover(function() {
-                $("#arrow").css("fill", "#9C74F1");
+                $("#arrow").css("fill", "#704CE5");
             }, function() {
                 $("#arrow").css("fill", "black");
             });
@@ -17,7 +17,7 @@ jQuery(document).ready(function ($) {
 
 jQuery(document).ready(function ($) {    
             $("#cv").hover(function() {
-                $("#arrow").css("fill", "#9C74F1");
+                $("#arrow").css("fill", "#704CE5");
             }, function() {
                 $("#arrow").css("fill", "black");
             });
@@ -32,4 +32,3 @@ jQuery(document).ready(function ($) {
 
     });  
 });
-

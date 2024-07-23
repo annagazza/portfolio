@@ -31,6 +31,7 @@
   <!-- Jquery -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script type="text/javascript" src="jquery/main.js"></script>
+    <script type="module" src="js/main.js?v=1.0"></script>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -39,8 +40,27 @@
   <meta name='viewport' content='width=device-width, user-scalable=no,
     initial-scale=1, maximum-scale=1, minimum-scale=1' />
 
+
   <title>Anna Gazza</title>
-    
+     <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      // Controlla se il loader è già stato mostrato
+      if (!localStorage.getItem('loaderShown')) {
+        // Mostra il loader
+        document.querySelector('.loadermask').style.display = 'block';
+
+        // Imposta un timeout per nascondere il loader dopo un certo tempo (ad esempio, 2.5 secondi)
+        setTimeout(function() {
+          document.querySelector('.loadermask').style.display = 'none';
+          // Imposta il valore nel localStorage per indicare che il loader è stato mostrato
+          localStorage.setItem('loaderShown', 'true');
+        }, 2500); // 2500 millisecondi = 2.5 secondi
+      } else {
+        // Nascondi il loader se è già stato mostrato
+        document.querySelector('.loadermask').style.display = 'none';
+      }
+    });  // 
+  </script>
 
 </head>
 
@@ -57,64 +77,81 @@
 
   <div class="box">
     <div class="container-fluid ">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-xl-12 container">
-          <div class="nav">
-            <div id="home" class="button">
-              <a href="index.html" class="selected ">Home</a>
-            </div>
-            <div id="info">
-              <a href="cv.html" class="button">Info</a>
-            </div>
-            <div id="works">
-              <a href="works.html" class="button">Works</a>
-            </div>
-          </div>
-        </div>
-      </div>
+     <div>
+                <div class="col-sm-12 col-md-12 col-xl-12 navbar" >
+                            <div class="nav"> 
+                                <div id="home" class="button">
+                                <a href="index.html">Home</a>
+                                </div>
+                                <div id="info" class="button">
+                                <a href="cv.html">Info</a>
+                                </div>
+                            </div>
+                </div>
+           </div> 
 
-      <div class="row">
+      <div>
         <div class="margini">
-          <div class="col-sm-12 col-md-12 col-xl-12 io">
-            <h1>Anna Gazza</h1>
-            <h2>UX/UI and information designer</h2>
-          </div>
 
+ <div class="col-sm-12 col-md-12 col-xl-12 hero">
+          <div class="col-sm-12 col-md-12 col-xl-8 container1">
+              <div class="jobtitle">
+                                    <h3 class="myname">👋 Hi! I'm Anna Gazza</h3>
+                                    <h4>UX/UI and information designer</h4>
+                                </div>
+                                <div>
+                                   <h3>I'm a curious designer who constantly looks at new things to do and new ways to grow.
+                                       <br><br>
+                                       I have professional experience in <b>✷</b><i class="highlight"> data visualization</i>, <b>✦</b><i class="highlight"> UX/UI design</i>, <b>✱</b><i class="highlight"> visual design</i>,  and <b>✹</b><i class="highlight"> editorial</i>. I believe that designing is holding responsibility and the design can play an active role in bringing positive social change; that’s why my projects are trying to share meaning and have a positive impact.
+                                       <br><br>
+                                       In my spare time I usually pet <b id="gif" class="purple">animals</b>. 
+                                 </h3>
 
-          <div class="col-sm-12 col-md-12 col-xl-5 offset-xl-7 description">
-              <div class="maremma">
-            <p class="content">Hello there! I'm Anna, a curious designer who constantly looks at new things to do and new ways to grow. 
-              <br>
-            <br>
-            My projects, ranging from user experience to visual design and data visualization, are trying to share meaning and have a positive impact. That’s because I believe that designing is having responsibility and the design can play an active role in bringing positive social change. I am motivated, passionate and collaborative. My curiosity has always driven me to conduct in-depth research on the topics I face to find the best solutions I can. Through teamwork, I've learned the importance of viewing the same thing from different perspectives to achieve a more comprehensive result.
-              <br>
-                <br>
-              I am currently based in Brescia (IT), but I am always seeking new opportunities and challenges to test myself and continue growing as a designer. 
-                <br>
-                <br>
-                In my spare time I usually pet <b id="gif" class="purple">animals</b>.
-            </p>
-          </div>
-</div>
-          <img src="assets/gif.gif" id="image" class="easter" alt="image">
-
-          <div class="col-sm-12 col-md-12 col-xl-2 contact">
-            <p class="main">Contacts
-              <br>
-              <a href="mailto:gazza.anna@gmail.com" target="_blank" class="second">gazza.anna@gmail.com</a>
-              <br>
-              <a href="https://www.linkedin.com/in/anna-gazza-48a2191b6/" target="_blank" class="second">LinkedIn</a>
-                <br> <br>
-                  <span class="copyright"> 2024 © All rights reserved</span>
-            </p>
+                                
+                                </div>          
+         </div>
+               <div class="col-sm-12 col-md-12 col-xl-1 offset-xl-11 scroll"> 
+                   <div class="scroll-element">
+                   <div class="mouse">
+                   <div class="scrollwheel" id="scrollwheel"></div>
+                  </div>
+                       </div>
+               </div> 
+            </div>  
             
+            
+             <img src="assets/gif.gif" id="image" class="easter" alt="image">
+            
+                
+                   <div class="col-sm-12 col-md-12 col-xl-12 catalogo-prog" id="catalogo">
+          <div class="filter">
+              <h3>Selected works</h3>
+              <div id="filterGroup" class="filter-group">
+              </div>         
+        </div>
+                                    <div class="gridcontainer">
+                            
+              
+                        </div>
+            
+                    
+                       <div class="copyright">
+                <p class="copyright-p">Designed and developed by Anna Gazza &#169 - &#128205 Italy</p>
+           </div> 
+         
+            
+                    
 
-          </div>
+       
+                
+              
+
+            </div>
         </div>
       </div>
     </div>
   </div>
-       <div id="cursor"></div>
+
 </body>
 
 </html>
