@@ -64,7 +64,7 @@ export const WORKS = [
     ],
     media: "INTERACTIVE WEBSITE",
     skill: "Data analysis, Information architecture, Prototyping, Storytelling,  Qualitative research",
-    description: "A website presenting the findings of a research study on Facebook privacy policy violations and how the platform has responded to them, through data storytelling"
+    description: "A website to raise awareness about the infrastructure underlying the game apps, showing the main findings of my research through data visualization and storytelling"
   },
   {
     name: "Museo Egizio integrated report",
