@@ -413,7 +413,7 @@ padding-bottom: 8px;}
     
     @supports (inset: env(safe-area-inset-bottom)) {
     .box {
-      height: calc(100vh - env(safe-area-inset-bottom));
+      height: calc(97vh - env(safe-area-inset-bottom));
       padding-bottom: env(safe-area-inset-bottom);
     }
 
