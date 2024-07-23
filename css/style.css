@@ -397,7 +397,7 @@ padding-bottom: 8px;}
 @media only screen and (max-width: 1200px){
     
     .loader {
-   height: calc(100vh - 56px);
+    height: 97vh;
     width: 94vw;
     border-radius:24px;
     margin-top:1.5vh;
@@ -406,13 +406,19 @@ padding-bottom: 8px;}
    
 .loader > div {
     width: 94vw;
-    height: calc(100vh - 56px);
+    height: 95vh;
     border-radius:24px; 
     margin-top:1.5vh;
 }
+    
+    @supports (inset: env(safe-area-inset-bottom)) {
+    .box {
+      height: calc(100vh - env(safe-area-inset-bottom));
+      padding-bottom: env(safe-area-inset-bottom);
+    }
 
     .box {
-    height: calc(100vh - 56px);
+    height: 97vh;
     width: 94vw;
     border-radius:24px;
     margin-top:1.5vh;
