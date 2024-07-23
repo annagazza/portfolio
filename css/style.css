@@ -397,7 +397,7 @@ padding-bottom: 8px;}
 @media only screen and (max-width: 1200px){
     
     .loader {
-    height: 97vh;
+   height: calc(100vh - 56px);
     width: 94vw;
     border-radius:24px;
     margin-top:1.5vh;
@@ -406,13 +406,13 @@ padding-bottom: 8px;}
    
 .loader > div {
     width: 94vw;
-    height: 95vh;
+    height: calc(100vh - 56px);
     border-radius:24px; 
     margin-top:1.5vh;
 }
 
     .box {
-    height: 97vh;
+    height: calc(100vh - 56px);
     width: 94vw;
     border-radius:24px;
     margin-top:1.5vh;
