@@ -36,6 +36,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Zodiak-ExtraboldItalic';
+  src: url('../assets/fonts/Zodiak-ExtraboldItalic.woff2') format('woff2'),
+       url('../assets/fonts/Zodiak-ExtraboldItalic.woff') format('woff'),
+       url('../assets/fonts/Zodiak-ExtraboldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
+
 
 /*TEXT STYLE*/
 a {color: black;}
