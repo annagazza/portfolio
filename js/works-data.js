@@ -10,21 +10,31 @@ export const WORKS = [
       "Visual design"
     ],
     media: "MICRO WEBSITE",
-    skill: "Prototyping, Storytelling",
-    description: "A website presenting the findings of a research study on Facebook privacy policy violations and how the platform has responded to them, through data storytelling"
+    description: "Raising awareness on Facebook policy violations through data storytelling"
+  },
+    {
+    name: "Meti",
+    href: "auth.html",
+    video: "assets/img/thumb/MET.mp4",
+    img: null,
+    tags: [
+      "UX/UI design",
+      "Visual design"
+    ],
+    media: "WEB APP",
+    description: "Enhancing industrial processes with AI-driven guidance"
   },
   {
     name: "Law of the Jungle",
     href: "Law_of_the_jungle.html",
-    video: "assets/img/thumb/LAW.mp4",
+    video: "assets/img/thumb/law.mp4",
     img: null,
     tags: [
       "UX/UI design",
       "Visual design"
     ],
     media: "EXPERIMENTAL GAME",
-    skill: "Information architecture, Game design, Storytelling",
-    description: "A website, designed as a quiz game, helping users to reflect on the discrimination and ambiguities of Instagram's nudity policy"
+    description: "Encouraging critical reflection on policies through interactive play"
   },
   {
     name: "Dewo",
@@ -35,21 +45,20 @@ export const WORKS = [
       "UX/UI design"
     ],
     media: "IoT",
-    skill: "Interaction design, Personas, Prototyping, User research, User journey",
-    description: "An IoT that aims to improve the children's autonomy by bringing duty and fun together through an app and a box for small-sized objects"
+    description: "Fostering children’s autonomy by making daily chores engaging"
   },
-  {
-    name: "Bellini Yacht",
-    href: "Bellini_yacht.html",
-    video: "assets/img/thumb/BY.mp4",
+  
+      {
+    name: "Making the invisible visible",
+    href: "Making_the_invisible_visible.html",
+    video: "assets/img/thumb/MIV.mp4",
     img: null,
     tags: [
-      "UX/UI design",
+      "Data visualization",
       "Visual design"
     ],
-    media: "B2C WEBSITE",
-    skill: "Prototyping",
-    description: "A website for luxury yacht sales that reflects the client’s values and ensures an easy content management"
+    media: "INTERACTIVE REPORT",
+    description: "An interactive exploration of visual content censorship"
   },
   {
     name: "Invisible Trails",
@@ -60,24 +69,20 @@ export const WORKS = [
       "Data visualization",
       "UX/UI design",
       "Visual design",
-      "Editorial"
     ],
     media: "INTERACTIVE WEBSITE",
-    skill: "Data analysis, Information architecture, Prototyping, Storytelling,  Qualitative research",
-    description: "A website to raise awareness about the infrastructure underlying the game apps, showing the main findings of my research through data visualization and storytelling"
+    description: "Exposing the hidden infrastructure behind apps through data storytelling"
   },
   {
-    name: "Museo Egizio integrated report",
+    name: "Museo Egizio report",
     href: "Integrated_report_of_Museo_Egizio.html",
     video: null,
     img: "assets/img/thumb/MUE.webp",
     tags: [
       "Data visualization",
-      "Editorial"
     ],
     media: "DIGITAL AND PRINTED REPORT",
-    skill: "Information design, graphic design",
-    description: "A report featuring a series of impactful and easy-to-read visualisations that showcase quantitative and qualitative museum activities"
+    description: "Showcasing museum activities with clear and engaging data visualizations"
   },
   {
     name: "Infographics for Gedi",
@@ -86,24 +91,8 @@ export const WORKS = [
     img: "assets/img/thumb/GED.webp",
     tags: [
       "Data visualization",
-      "Editorial"
     ],
     media: "NEWSPAPER DASHBOARDS",
-    skill: "Information design, graphic design",
-    description: "A collection of printed dashboards that explore different topics related to the environment and health"
-  },
-  {
-    name: "Making the invisible visible",
-    href: "Making_the_invisible_visible.html",
-    video: null,
-    img: "assets/img/thumb/MIV.webp",
-    tags: [
-      "Data visualization",
-      "UX/UI design",
-      "Visual design"
-    ],
-    media: "INTERACTIVE REPORT",
-    skill: "Data analysis, Qualitative research, UI design",
-    description: "A website gathering together different interactive visualisations about the censorship of visual content giving a comprehensive view of the phenomenon"
+    description: "Exploring societal topics through printed dashboards"
   }
 ]

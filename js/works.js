@@ -4,7 +4,6 @@ export const TAGS_MAP = new Map([
     ['Data visualization', '✷'],
     ['UX/UI design', '✦'],
     ['Visual design', '✱'],
-    ['Editorial', '✹'],
 ]);
 
 let activeFilters = [];
