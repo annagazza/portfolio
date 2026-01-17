@@ -27,7 +27,7 @@ export const WORKS = [
   {
     name: "Law of the Jungle",
     href: "Law_of_the_jungle.html",
-    video: "assets/img/thumb/law.mp4",
+    video: "assets/img/thumb/LAW.mp4",
     img: null,
     tags: [
       "UX/UI design",
