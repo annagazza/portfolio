@@ -48,7 +48,7 @@
 
 
 /*TEXT STYLE*/
-a {color: black;}
+a {color: #252525;}
 a:hover{
     text-decoration:none;
     color:#5128D3;}
@@ -77,16 +77,16 @@ li{list-style:none;
 }
 
 li:before {
-    content:"✦";
+    content:"✽";
 font-size:13px;
-color: #704CE5;
+color: #5128D3;
 padding-right:8px;}
 
 .highlight {font-family: Zodiak-ExtraboldItalic;}
 
 body {
-    color:black;
-    background-color:#704CE5;
+    color:#252525;
+    background-color:#5128D3;
     width: 100%;
     height:100%;
 }
@@ -97,7 +97,7 @@ body {
     border-radius:48px;
     margin-top:3vh;
     margin-left:1.5vw;
-    background-color:#FCFBF7;
+    background-color:#FCFBF8;
     position:fixed;
     padding:48px;   
 }
@@ -127,7 +127,7 @@ padding-right:0;}
 .nav{gap:48px;}
 
 #info {text-decoration: underline;
-  text-decoration-color: #704CE5;
+  text-decoration-color: #5128D3;
     text-underline-offset: 4px;}
 
 /*sidebar*/
@@ -143,13 +143,10 @@ padding-right:0;}
 .jobtitle{padding-bottom:64px;}
 .myname{padding:0;
 margin:0;}
-
-#link{
-    color:#704CE5;
-    text-decoration: underline;}
-
+#link {color:#5128D3;}
 #link:hover{
-    color:#5128D3;
+    color:#7756DE;}
+#link-text, #link-text:hover{
     text-decoration: underline;}
 
 /*SCROLL*/
@@ -161,19 +158,22 @@ justify-content: flex-start;
 gap:24px;
 padding-bottom:48px;}
 
-.expertize{color:#704CE5;
+.expertize{
 padding-top:12px;
-border-bottom: solid 2px #704CE5;}
+border-bottom: solid 2px #DFD7C2;}
 
 .cv{display:flex;
     flex-direction:column;
     gap:24px;}
 
 .work, .area, .area2{padding-top: 12px;}
-.location{color:#704CE5;}
+.location{color:#252525;}
 
 .list{padding:0;}
 .area2{padding-bottom:48px;}
+
+.date{color:#717171;
+font-size: 13px;}
 
 
 
